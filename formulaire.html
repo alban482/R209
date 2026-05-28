@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Formulaire de contact</h1>
+        <form action="" method="get">
+            <div class="fc-group">
+                <label for="name">Votre Pseudo *</label>
+                <input type="text" name="name" id="name" placeholder="Votre pseudo" required />
+            </div>
+            <div class="fc-group">
+                <label for="mdp">Votre Mot de passe *</label>
+                <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe" required />
+            </div>
+            <div class="fc-group">
+                <label for="mail">Votre e-mail *</label>
+                <input type="email" name="mail" id="mail" placeholder="Votre adresse e-mail" required />
+            </div>
+            <div class="fc-group">
+                <label for="objet-select">Objet du message *</label>
+                <select name="objet" id="objet-select">
+                    <option value="">J'ai une question</option>
+                    <option value="sugg">Je fais une suggestion</option>
+                    <option value="prob">Je rencontre un problème</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+            <div class="fc-group">
+                <label for="msg">Votre message *</label>
+                <textarea name="msg" id="msg" placeholder="Votre message" required></textarea>
+            </div>
+            <fieldset>
+                <legend>Niveau d'urgence *</legend>
+                <div class="radio-row">
+                    <label><input type="radio" name="urgence" value="urgent" /> Urgent</label>
+                    <label><input type="radio" name="urgence" value="normal" checked /> Normal</label>
+                    <label><input type="radio" name="urgence" value="lent" /> Lent</label>
+                </div>
+            </fieldset>
+            <p class="fc-privacy">J'ai lu et j'accepte la <a href="#">politique de confidentialité</a> du site.</p>
+            <button type="submit" class="fc-submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
